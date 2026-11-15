@@ -30,10 +30,7 @@ CREATE TABLE IF NOT EXISTS applications (
         'Selected',
         'Rejected'
     ) NOT NULL DEFAULT 'Applied',
-
     skills TEXT,
-
     applied_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
     INDEX applications_user_id_idx (user_id)
 );
